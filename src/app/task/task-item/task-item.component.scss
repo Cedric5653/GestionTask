@@ -1,0 +1,30 @@
+.task-item-card {
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s;
+  
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  .task-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-item-body {
+    margin-top: 10px;
+  }
+  
+  .delete-button {
+    color: #f44336;
+  }
+  
+  mat-checkbox {
+    text-decoration: line-through;
+  }
+  

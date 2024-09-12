@@ -1,0 +1,19 @@
+
+
+  <mat-card class="task-form-card">
+    <mat-toolbar color="accent" class="task-form-toolbar">{{ isEditMode ? 'Edit Task' : 'New Task' }}</mat-toolbar>
+    <form (ngSubmit)="onSave()" class="task-form">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Title</mat-label>
+        <input matInput type="text" [(ngModel)]="task.title" name="title" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="task.description" name="description"></textarea>
+      </mat-form-field>
+  
+      <button mat-raised-button color="accent" type="submit" class="full-width">{{ isEditMode ? 'Update Task' : 'Create Task' }}</button>
+    </form>
+  </mat-card>
+  

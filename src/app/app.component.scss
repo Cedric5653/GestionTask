@@ -1,0 +1,23 @@
+*{
+  // display: inline-block;
+  margin: 50px;
+
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a[mat-button] {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

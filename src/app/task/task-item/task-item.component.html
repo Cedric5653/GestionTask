@@ -1,0 +1,31 @@
+<!-- task-item.component.html -->
+<!-- <mat-card>
+  <div>
+    <mat-checkbox [(ngModel)]="task.completed" (change)="toggleCompleted()">{{ task.title }}</mat-checkbox>
+    <button mat-icon-button color="warn" (click)="deleteTask()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+  <mat-divider></mat-divider>
+  <div>
+    <p>{{ task.description }}</p>
+    <small>Status: {{ task.completed ? 'Completed' : 'In Progress' }}</small>
+  </div>
+</mat-card> -->
+
+
+
+
+<mat-card class="task-item-card">
+  <div class="task-item-header">
+    <mat-checkbox [(ngModel)]="task.completed" (change)="toggleCompleted()">{{ task.title }}</mat-checkbox>
+    <button mat-icon-button color="warn" (click)="onDelete()" class="delete-button">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="task-item-body">
+    <p>{{ task.description }}</p>
+    <small>Status: {{ task.completed ? 'Completed' : 'In Progress' }}</small>
+  </div>
+</mat-card>
